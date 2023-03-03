@@ -61,6 +61,21 @@ body {
   cursor: pointer;
 }
 
+#page1-btn {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+#page1-btn:hover {
+  background-color: rgb(227, 81, 81);
+  cursor: pointer;
+}
+
 .info {
   margin: 0 2rem;
   font-size: 1.1rem;

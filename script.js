@@ -107,6 +107,13 @@ function searchAnotherDOM(dom, fileName) {
       const matchID = match.getAttribute("id");
       const matchFileName = fileName.split("/")[fileName.split("/").length - 1];
       console.log(matchID, matchFileName);
+      localStorage.setItem(
+        matchFileName,
+        JSON.stringify({
+          query: query.value,
+        })
+      );
+      console.log(JSON.parse(localStorage.getItem(matchFileName)));
     });
   }
 }
